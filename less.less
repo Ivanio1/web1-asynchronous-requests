@@ -1,0 +1,27 @@
+/* Implementation */
+#gr {
+  .box-shadow(5px, 5px, 6px, 0.3);
+  .border-radius(20px);
+  .reflect(20%, 0.2);
+
+}
+
+
+/* Mixin */
+.box-shadow (@x: 0px, @y: 3px, @blur: 5px, @alpha: 0.5) {
+  -webkit-box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+  -moz-box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+  box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+}
+
+/* Mixin */
+.border-radius (@radius: 5px) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  border-radius: @radius;
+}
+
+/* Mixin */
+.reflect (@length: 50%, @opacity: 0.2){
+  -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(@length, transparent), to(rgba(255,255,255,@opacity)));
+}

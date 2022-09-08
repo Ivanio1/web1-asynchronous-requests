@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web #1</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="pics/free-icon-orc-6595622.png">
+    <link rel="stylesheet/less" type="text/css" href="less.less"/>
+
+</head>
+<body>
+<table>
+    <thead>
+
+    <tr>
+        <th class="info"> Соболев Иван Александрович(P32312)</th>
+        <th class="info"> Лабораторная работа №1 по Веб программированию</th>
+        <th class="info" > Вариант 3017</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="tr_variables">
+        <td><br><br><br><br>
+            Изменение X: <br>
+            Выберете значение из предложенного списка: <br>
+            <div class="radio">
+                <input type="radio" name="x_coordinate" class="x" id="x_value_-5" value="-5"
+                       onclick="set_X_value(this.id)">-5
+                <input type="radio" name="x_coordinate" class="x" id="x_value_-4" value="-4"
+                       onclick="set_X_value(this.id)">-4
+                <input type="radio" name="x_coordinate" class="x" id="x_value_-3" value="-3"
+                       onclick="set_X_value(this.id)">-3
+                <input type="radio" name="x_coordinate" class="x" id="x_value_-2" value="-2"
+                       onclick="set_X_value(this.id)">-2
+                <input type="radio" name="x_coordinate" class="x" id="x_value_-1" value="-1"
+                       onclick="set_X_value(this.id)">-1
+                <input type="radio" name="x_coordinate" class="x" id="x_value_0" value="0"
+                       onclick="set_X_value(this.id)"> 0
+                <input type="radio" name="x_coordinate" class="x" id="x_value_1" value="1"
+                       onclick="set_X_value(this.id)"> 1
+                <input type="radio" name="x_coordinate" class="x" id="x_value_2" value="2"
+                       onclick="set_X_value(this.id)"> 2
+                <input type="radio" name="x_coordinate" class="x" id="x_value_3" value="3"
+                       onclick="set_X_value(this.id)"> 3
+         <input size="1" type="text" name="xval" id="select_x" class="error_value" readonly >
+
+        </div>
+            <br>
+            Изменение Y: <br>
+            Введите любое значение от -3 до 5 <br>
+            <input id="value_y"  maxlength="8" class="error_value" type="text"><br><br><br><br><br>
+
+        <div id="error_text">
+            <text id="text_error_x">Ошибка выбора значения координаты X: никакое из значений не выбрано<br></text>
+            <text id="text_error_y">Ошибка ввода значения координаты Y: данные не введены<br></text>
+            <text id="text_error_r">Ошибка выбора значения координаты R: никакое из значений не выбрано</text>
+        </div>
+        </td>
+
+
+
+        <td>
+            <br><br><br><br>
+            Изменение R: <br>
+            Выберете значения из предложенного списка <br>
+            <text class="td_center">
+                <input name="checkboxes" type="checkbox" id="checkbox_variable_1" value="1">
+                <label>1</label>
+                <input name="checkboxes" type="checkbox" value="1.5">
+                <label>1.5</label>
+                <input name="checkboxes" type="checkbox" value="2">
+                <label>2</label>
+                <input name="checkboxes" type="checkbox" value="2.5">
+                <labe>2.5</labe>
+                <input name="checkboxes" type="checkbox" value="3">
+                <label>3</label>
+
+            </text>
+            <br><br><br><br><br><br><br><br><br>
+            <div id="input_buttons">
+                <input id="send_button" type="submit" value="Send">
+                <input id="clear_button" type="submit" value="Clear"   onclick="draw(3)">
+            </div>
+        </td>
+
+        <td> <canvas id="canvas"></canvas>             <img src="pics/graph.jpg" alt="График" id="gr">
+
+        </td>
+
+    </tr>
+
+    </tbody>
+</table>
+<div id="add_table">
+
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/javascript" src="js/validation.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/less"></script>
+<script src="js/draw.js"></script>
+
+</body>
+</html>
